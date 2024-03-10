@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc25551e-ad10-485a-8d14-f28dc40a2937" name="Changes" comment="feat : 주석 추가 및 sql문 수정">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JUitCycleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/TestControllerTest.java" afterDir="false" />
+    <list default="true" id="cc25551e-ad10-485a-8d14-f28dc40a2937" name="Changes" comment="feat : 테스트 코드 작성">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/memberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JUitCycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/testPractice/JUitCycleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/testPractice/JUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/TestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/testPractice/TestControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +61,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -238,7 +239,7 @@
       <workItem from="1709727718307" duration="7656000" />
       <workItem from="1709824339826" duration="3653000" />
       <workItem from="1709861644166" duration="1679000" />
-      <workItem from="1709879111277" duration="3467000" />
+      <workItem from="1709879111277" duration="6458000" />
     </task>
     <task id="LOCAL-00001" summary="build : project build">
       <option name="closed" value="true" />
@@ -264,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709829906003</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat : 테스트 코드 작성">
+      <option name="closed" value="true" />
+      <created>1709982048601</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709982048601</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +283,8 @@
     <MESSAGE value="build : project build" />
     <MESSAGE value="feat : impl controller/ service / repository 구현" />
     <MESSAGE value="feat : 주석 추가 및 sql문 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 주석 추가 및 sql문 수정" />
+    <MESSAGE value="feat : 테스트 코드 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 테스트 코드 작성" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
