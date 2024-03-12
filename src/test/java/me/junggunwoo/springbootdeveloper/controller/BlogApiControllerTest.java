@@ -33,7 +33,7 @@ class BlogApiControllerTest {
     protected MockMvc mockMvc;
 
     @Autowired
-    protected ObjectMapper objectMapper; // 직렬화 역정렬화를 위한 클래스
+    protected ObjectMapper objectMapper; // 직렬화 or 역직렬화를 위한 클래스
 
     @Autowired
     private WebApplicationContext context;

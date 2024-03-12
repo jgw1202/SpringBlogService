@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc25551e-ad10-485a-8d14-f28dc40a2937" name="Changes" comment="feat : 테스트 코드 작성">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/controller/BlogApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/domain/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/dto/AddArticleRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/repository/BlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/service/BlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/controller/BlogApiControllerTest.java" afterDir="false" />
+    <list default="true" id="cc25551e-ad10-485a-8d14-f28dc40a2937" name="Changes" comment="feat : 블로그 글 작성 기능 구현">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/MemberRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/TestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/memberService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/testPractice/JUitCycleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/testPractice/JUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/testPractice/TestControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/controller/BlogApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/controller/BlogApiControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +247,7 @@
       <workItem from="1709824339826" duration="3653000" />
       <workItem from="1709861644166" duration="1679000" />
       <workItem from="1709879111277" duration="6458000" />
-      <workItem from="1710240947468" duration="2801000" />
+      <workItem from="1710240947468" duration="6310000" />
     </task>
     <task id="LOCAL-00001" summary="build : project build">
       <option name="closed" value="true" />
@@ -296,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709982048601</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat : 블로그 글 작성 기능 구현">
+      <option name="closed" value="true" />
+      <created>1710245197329</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710245197329</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +300,8 @@
     <MESSAGE value="feat : impl controller/ service / repository 구현" />
     <MESSAGE value="feat : 주석 추가 및 sql문 수정" />
     <MESSAGE value="feat : 테스트 코드 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 테스트 코드 작성" />
+    <MESSAGE value="feat : 블로그 글 작성 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 블로그 글 작성 기능 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
