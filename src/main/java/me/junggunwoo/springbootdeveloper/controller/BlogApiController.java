@@ -7,10 +7,7 @@ import me.junggunwoo.springbootdeveloper.dto.ArticleResponse;
 import me.junggunwoo.springbootdeveloper.service.BlogService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -42,5 +39,19 @@ public class BlogApiController {
 
         return ResponseEntity.ok()
                 .body(articles);
+    }
+
+    // @pathVariable로 get 요청을 받아 id를 가져온 후 findById()를 통해 해당 id 번쨰 블로그의
+    // 글 정보를 body에 담아 웹 브라우저로 전송
+    @GetMapping("/api/articles/{id}")
+    // URL 경로에서 값 추출
+    public ResponseEntity<ArticleResponse> findArticle(@PathVariable long id) {
+        // @pathVariable 애너테이션은 URL에서 값을 가져옴
+        // ex) /api/articles/3 에 대한 get 요청 -> id = 3 이 됨
+
+        Article article = blogService.findById(id);
+
+        return ResponseEntity.ok()
+                .body(new ArticleResponse(article));
     }
 }
