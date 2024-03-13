@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc25551e-ad10-485a-8d14-f28dc40a2937" name="Changes" comment="fix : apllication.yml 파일 수정 - 하이버네이트 초기화 전 sql 파일 먼저 실행되는 오류 해결">
+    <list default="true" id="cc25551e-ad10-485a-8d14-f28dc40a2937" name="Changes" comment="feat : 블로그 글 조회 기능 구현">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/controller/BlogApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/controller/BlogApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/service/BlogService.java" afterDir="false" />
@@ -109,7 +109,7 @@
       <recent name="me.junggunwoo.springbootdeveloper" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BlogApiControllerTest">
+  <component name="RunManager" selected="Gradle.BlogApiControllerTest.deleteArticle">
     <configuration name="BlogApiControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -124,6 +124,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;me.junggunwoo.springbootdeveloper.controller.BlogApiControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="BlogApiControllerTest.deleteArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.junggunwoo.springbootdeveloper.controller.BlogApiControllerTest.deleteArticle&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -182,30 +206,6 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="TestControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.junggunwoo.springbootdeveloper.TestControllerTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
     <configuration name="SpringBootDeveloperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="DEBUG_MODE" value="true" />
       <module name="springboot-developer.main" />
@@ -221,19 +221,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.BlogApiControllerTest.deleteArticle" />
       <item itemvalue="Gradle.BlogApiControllerTest.findAllArticles" />
       <item itemvalue="Gradle.BlogApiControllerTest.findArticle" />
       <item itemvalue="Gradle.BlogApiControllerTest" />
-      <item itemvalue="Gradle.TestControllerTest" />
       <item itemvalue="Spring Boot.SpringBootDeveloperApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BlogApiControllerTest.deleteArticle" />
+        <item itemvalue="Spring Boot.SpringBootDeveloperApplication" />
         <item itemvalue="Gradle.BlogApiControllerTest" />
         <item itemvalue="Gradle.BlogApiControllerTest.findArticle" />
-        <item itemvalue="Spring Boot.SpringBootDeveloperApplication" />
         <item itemvalue="Gradle.BlogApiControllerTest.findAllArticles" />
-        <item itemvalue="Gradle.TestControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +252,7 @@
       <workItem from="1709879111277" duration="6458000" />
       <workItem from="1710240947468" duration="7858000" />
       <workItem from="1710250025686" duration="1020000" />
-      <workItem from="1710303279542" duration="5131000" />
+      <workItem from="1710303279542" duration="5857000" />
     </task>
     <task id="LOCAL-00001" summary="build : project build">
       <option name="closed" value="true" />
@@ -310,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710304313975</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat : 블로그 글 조회 기능 구현">
+      <option name="closed" value="true" />
+      <created>1710324250704</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710324250704</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +332,8 @@
     <MESSAGE value="feat : 블로그 글 작성 기능 구현" />
     <MESSAGE value="feat : 블로그 글 작성 기능 구현 및 주석 수정" />
     <MESSAGE value="fix : apllication.yml 파일 수정 - 하이버네이트 초기화 전 sql 파일 먼저 실행되는 오류 해결" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix : apllication.yml 파일 수정 - 하이버네이트 초기화 전 sql 파일 먼저 실행되는 오류 해결" />
+    <MESSAGE value="feat : 블로그 글 조회 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 블로그 글 조회 기능 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
