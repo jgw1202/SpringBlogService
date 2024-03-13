@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc25551e-ad10-485a-8d14-f28dc40a2937" name="Changes" comment="feat : 블로그 글 작성 기능 구현">
+    <list default="true" id="cc25551e-ad10-485a-8d14-f28dc40a2937" name="Changes" comment="feat : 블로그 글 작성 기능 구현 및 주석 수정">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/dto/ArticleResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/controller/BlogApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/controller/BlogApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/controller/BlogApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/controller/BlogApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +64,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -107,7 +111,7 @@
       <recent name="me.junggunwoo.springbootdeveloper" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BlogApiControllerTest">
+  <component name="RunManager" selected="Spring Boot.SpringBootDeveloperApplication">
     <configuration name="BlogApiControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -205,6 +209,7 @@
       <method v="2" />
     </configuration>
     <configuration name="SpringBootDeveloperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="DEBUG_MODE" value="true" />
       <module name="springboot-developer.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="me.junggunwoo.springbootdeveloper.SpringBootDeveloperApplication" />
       <extension name="coverage">
@@ -226,8 +231,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BlogApiControllerTest" />
         <item itemvalue="Spring Boot.SpringBootDeveloperApplication" />
+        <item itemvalue="Gradle.BlogApiControllerTest" />
         <item itemvalue="Gradle.TestControllerTest" />
         <item itemvalue="Gradle.JUitCycleTest" />
         <item itemvalue="Gradle.JUnitTest.junitTest" />
@@ -247,7 +252,9 @@
       <workItem from="1709824339826" duration="3653000" />
       <workItem from="1709861644166" duration="1679000" />
       <workItem from="1709879111277" duration="6458000" />
-      <workItem from="1710240947468" duration="6310000" />
+      <workItem from="1710240947468" duration="7858000" />
+      <workItem from="1710250025686" duration="1020000" />
+      <workItem from="1710303279542" duration="853000" />
     </task>
     <task id="LOCAL-00001" summary="build : project build">
       <option name="closed" value="true" />
@@ -289,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710245197329</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat : 블로그 글 작성 기능 구현 및 주석 수정">
+      <option name="closed" value="true" />
+      <created>1710248478899</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710248478899</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +316,8 @@
     <MESSAGE value="feat : 주석 추가 및 sql문 수정" />
     <MESSAGE value="feat : 테스트 코드 작성" />
     <MESSAGE value="feat : 블로그 글 작성 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 블로그 글 작성 기능 구현" />
+    <MESSAGE value="feat : 블로그 글 작성 기능 구현 및 주석 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 블로그 글 작성 기능 구현 및 주석 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
