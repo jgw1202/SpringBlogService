@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc25551e-ad10-485a-8d14-f28dc40a2937" name="Changes" comment="feat : 블로그 글 조회 기능 구현">
+    <list default="true" id="cc25551e-ad10-485a-8d14-f28dc40a2937" name="Changes" comment="feat : 블로그 글 삭제 기능 구현">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/dto/UpdateArticleRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/controller/BlogApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/controller/BlogApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/domain/Article.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/junggunwoo/springbootdeveloper/service/BlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/controller/BlogApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/junggunwoo/springbootdeveloper/controller/BlogApiControllerTest.java" afterDir="false" />
     </list>
@@ -95,7 +97,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;a4933cc881ee29d1dc68800661a0d2bf&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -109,7 +111,7 @@
       <recent name="me.junggunwoo.springbootdeveloper" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BlogApiControllerTest.deleteArticle">
+  <component name="RunManager" selected="Gradle.BlogApiControllerTest">
     <configuration name="BlogApiControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,30 +160,6 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="BlogApiControllerTest.findAllArticles" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.junggunwoo.springbootdeveloper.controller.BlogApiControllerTest.findAllArticles&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
     <configuration name="BlogApiControllerTest.findArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -196,6 +174,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;me.junggunwoo.springbootdeveloper.controller.BlogApiControllerTest.findArticle&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="BlogApiControllerTest.updateArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.junggunwoo.springbootdeveloper.controller.BlogApiControllerTest.updateArticle&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -222,18 +224,18 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.BlogApiControllerTest.deleteArticle" />
-      <item itemvalue="Gradle.BlogApiControllerTest.findAllArticles" />
       <item itemvalue="Gradle.BlogApiControllerTest.findArticle" />
+      <item itemvalue="Gradle.BlogApiControllerTest.updateArticle" />
       <item itemvalue="Gradle.BlogApiControllerTest" />
       <item itemvalue="Spring Boot.SpringBootDeveloperApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BlogApiControllerTest.deleteArticle" />
-        <item itemvalue="Spring Boot.SpringBootDeveloperApplication" />
         <item itemvalue="Gradle.BlogApiControllerTest" />
+        <item itemvalue="Gradle.BlogApiControllerTest.updateArticle" />
+        <item itemvalue="Spring Boot.SpringBootDeveloperApplication" />
+        <item itemvalue="Gradle.BlogApiControllerTest.deleteArticle" />
         <item itemvalue="Gradle.BlogApiControllerTest.findArticle" />
-        <item itemvalue="Gradle.BlogApiControllerTest.findAllArticles" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +254,7 @@
       <workItem from="1709879111277" duration="6458000" />
       <workItem from="1710240947468" duration="7858000" />
       <workItem from="1710250025686" duration="1020000" />
-      <workItem from="1710303279542" duration="5857000" />
+      <workItem from="1710303279542" duration="7221000" />
     </task>
     <task id="LOCAL-00001" summary="build : project build">
       <option name="closed" value="true" />
@@ -318,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710324250704</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat : 블로그 글 삭제 기능 구현">
+      <option name="closed" value="true" />
+      <created>1710324892458</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710324892458</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +343,8 @@
     <MESSAGE value="feat : 블로그 글 작성 기능 구현 및 주석 수정" />
     <MESSAGE value="fix : apllication.yml 파일 수정 - 하이버네이트 초기화 전 sql 파일 먼저 실행되는 오류 해결" />
     <MESSAGE value="feat : 블로그 글 조회 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 블로그 글 조회 기능 구현" />
+    <MESSAGE value="feat : 블로그 글 삭제 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 블로그 글 삭제 기능 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
